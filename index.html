@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="description" content="Zach's Rock Paper Scissors">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>| Zach's Rock Paper Scissors!</title>
+
+    <!-- Shortcut Icon -->
+    <link rel="shortcut icon" type="img/png" href="assets/images/game.png">
+
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Jquery -->
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+        </script>
+
+</head>
+
+
+
+<body>
+
+
+    <div class="gameplay-area">
+
+        <h1>The Rock, Benjamin Paper, and Edward Scissors Square Off!</h1>
+        <div class="button-container">
+            <div id="rock" class="option">
+                <img src="assets/images/darock.gif" />
+                <br />
+                <span class="label">The Rock</span>
+            </div>
+            <div id="paper" class="option">
+                <img src="assets/images/dabenjamins.gif" />
+                <br />
+                <span class="label">Benjamin Paper</span>
+            </div>
+            <div id="scissors" class="option">
+                <img src="assets/images/edward.gif" />
+                <br />
+                <span class="label">Edward Scissors</span>
+            </div>
+        </div>
+        <div class="winnings">
+            <div class="result winBox">
+                <h2>Results</h2>
+                <div class="pickContainer">
+                    <span class="pickText">You: </span>
+                    <span id="userPick"></span>
+                </div>
+                <div class="pickContainer">
+                    <span class="pickText">Computer: </span>
+                    <span id="computerPick"></span>
+                </div>
+                <div class="clearfix"></div>
+                <div class="resultContainer">
+                    <span id="endResult">Click On The Rock Benjamin Paper or Edward Scissors To Begin!</span>
+                </div>
+            </div>
+            <div class="scores winBox">
+                <h2>Score</h2>
+                <div class="userScore score-box">
+                    User Score Is Currently:
+                    <span id="userScore">0</span>
+                </div>
+                <div class="computerScore score-box">
+                    Computer Score Is Currently:
+                    <span id="computerScore">0</span>
+                </div>
+            </div>
+
+        </div>
+        <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>
